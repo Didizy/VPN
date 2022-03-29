@@ -1,10 +1,14 @@
-# VPN
+# Wireguard
+1. Создаём калю на DO, подключаемся по ssh, делаем основные вещи(apt update, apt upgrade, apt install wireguard).
+2. Создаём кофиг wg0.conf на сервере, и добавляем туда следующую информацию:
+![image](https://user-images.githubusercontent.com/46522218/160555937-2cc8bf81-02dc-4d2c-aa0e-02c7b06630c4.png)
+3. На клиентском компьютере тоже создаём файл с расширением .conf и записываем туда следующую информацию:
+![image](https://user-images.githubusercontent.com/46522218/160556242-05c89153-ed2c-436f-8297-b93ad213ea87.png)
+4.Подключаемся, видим, что подключение прошло успешно
+![image](https://user-images.githubusercontent.com/46522218/160556578-7385d009-38a6-4e1f-8fbc-7095a33a3a44.png)
+5.Результат ifconfig:
+![image](https://user-images.githubusercontent.com/46522218/160556789-9d4a55f6-789f-494b-b00e-594b9fc3509e.png)
 
-![image](https://user-images.githubusercontent.com/46523068/160524234-daaa1212-3db6-4855-bcd7-e2330fcda971.png)
-
-![image](https://user-images.githubusercontent.com/46523068/160526785-391a45ae-2f41-4536-a589-0f3ec8977ff7.png)
-
-![image](https://user-images.githubusercontent.com/46523068/160531042-a3d7a2e9-600b-400e-8957-ed4d16f63f2f.png)
 
 Настройка подключения IKEv2
 
