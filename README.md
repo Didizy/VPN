@@ -1,7 +1,7 @@
 # Wireguard
 1. Создаём калю на DO, подключаемся по ssh, делаем основные вещи(apt update, apt upgrade, apt install wireguard).
 2. Генерируем ключи для сервера и для клиентов: 
-[image](https://user-images.githubusercontent.com/46522218/160557152-1e12694f-32ca-4f7d-95ba-68ef3a5f693e.png)
+![image](https://user-images.githubusercontent.com/46522218/160557152-1e12694f-32ca-4f7d-95ba-68ef3a5f693e.png)
 3. Создаём кофиг wg0.conf на сервере, и добавляем туда следующую информацию:
 ![image](https://user-images.githubusercontent.com/46522218/160555937-2cc8bf81-02dc-4d2c-aa0e-02c7b06630c4.png)
 4. На клиентском компьютере тоже создаём файл с расширением .conf и записываем туда следующую информацию:
