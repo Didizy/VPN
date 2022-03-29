@@ -10,8 +10,8 @@
 
 1. Создаём каплю на digitalocean
 2. Следуя инструкции генерируем случайные учётные данные (wget https://git.io/vpnsetup -qO vpn.sh && sudo sh vpn.sh)
-3. ![Скрин результата](https://user-images.githubusercontent.com/87607801/160533172-cff073b4-5c59-4567-b5dd-260e471e8afd.png)
-3. Сохраняе наши логин и пароль куда-нибудь
+![Скрин результата](https://user-images.githubusercontent.com/87607801/160533172-cff073b4-5c59-4567-b5dd-260e471e8afd.png)
+3. Сохраняем наши логин и пароль куда-нибудь
 4. Теперь создаём подключение на нашем компьютере
 5. Для этого нужно сохранить файл vpnclient.p12
 6. Для того, чтобы скачать этот файл, воспользуемся сторонним софтом - FileZilla
@@ -29,4 +29,7 @@
 ![image](https://user-images.githubusercontent.com/87607801/160532556-ebddbd50-6b8d-45f2-9388-6f1ff95e90c4.png)
 14. Тестим и радуемся, как маленькие. Ведь он работает очень быстро и даже на рутрекер можно зайти!!!!
 ![image](https://user-images.githubusercontent.com/87607801/160532653-fde10a5c-9ace-4d7e-bbd9-ad75d750978a.png)
-15. Тестим через wireshark
+15. Проверяем свой ip адрес
+![image](https://user-images.githubusercontent.com/87607801/160538611-cd155cd9-927e-48c0-bc6a-76556fb86ff2.png)
+16. Тестим через wireshark в течении минуты - двух. (Полученные файлы храняться в папке wiresharkTests)
+![image](https://user-images.githubusercontent.com/87607801/160538521-68358d4e-b426-4e05-9e5c-727c0776ae7b.png)
