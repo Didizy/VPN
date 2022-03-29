@@ -39,6 +39,6 @@
 ![image](https://user-images.githubusercontent.com/87607801/160566981-d80869e9-3b10-407f-8abd-54a9287630ad.png)
 16. Тестим через wireshark в течении минуты - двух. (Полученные файлы храняться в папке wiresharkTests)
 ![image](https://user-images.githubusercontent.com/87607801/160538521-68358d4e-b426-4e05-9e5c-727c0776ae7b.png)
-17. Проверка через Ipconfig (ip vpn отличается, т.к. мы забыли сделать эту часть и удалили старый дроплет, пришлось переустанавливать)
+17. Проверка через Ipconfig
 
 ![image](https://user-images.githubusercontent.com/87607801/160552871-cfcdd25c-bafc-4601-a668-e7cd5e9fe5d0.png)
