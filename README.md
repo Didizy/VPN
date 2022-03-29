@@ -32,7 +32,7 @@
 ![image](https://user-images.githubusercontent.com/87607801/160532294-6ea09bd2-a32f-4e32-8d2e-abb51b32a0c4.png)
 12. В свойствах ikey_config_impport.cmd разрешаем файл, а потом запускаем его от имени администратора и так же соглашаемся со всем, что там написано, не внося никаких изменений.
 13. В итоге в параметрах сети появляется нужное нам подключение VPN:
-![image](https://user-images.githubusercontent.com/87607801/160532556-ebddbd50-6b8d-45f2-9388-6f1ff95e90c4.png)
+![image](https://user-images.githubusercontent.com/87607801/160567225-b28aa3a1-e625-45c4-84a2-4603c78f5003.png)
 14. Тестим и радуемся. Ведь он работает очень быстро и можно зайти на рутрекер!
 ![image](https://user-images.githubusercontent.com/87607801/160532653-fde10a5c-9ace-4d7e-bbd9-ad75d750978a.png)
 15. Проверяем свой ip адрес
@@ -40,4 +40,5 @@
 16. Тестим через wireshark в течении минуты - двух. (Полученные файлы храняться в папке wiresharkTests)
 ![image](https://user-images.githubusercontent.com/87607801/160538521-68358d4e-b426-4e05-9e5c-727c0776ae7b.png)
 17. Проверка через Ipconfig (ip vpn отличается, т.к. мы забыли сделать эту часть и удалили старый дроплет, пришлось переустанавливать)
+
 ![image](https://user-images.githubusercontent.com/87607801/160552871-cfcdd25c-bafc-4601-a668-e7cd5e9fe5d0.png)
