@@ -1,4 +1,56 @@
 # Лабораторная работа 3.2
+
+### 1.Проверка на наличие VPN трафика (application_category_name)
+```python
+def summary_data(file_name):
+    streamer = NFStreamer(file_name, udps=Packet40Count()).to_pandas()
+    streamer.to_excel('output.xlsx')
+    if "VPN" in streamer['application_category_name'].unique():
+        app_bytes = streamer.groupby(['application_name', 'application_category_name'], as_index=False, sort=True)['bidirectional_bytes'].sum()
+        print(f'Protocols and data for {file_name}:\n{app_bytes.to_string(index=False)}')
+    else:
+        print(f'No VPN traffic detected in {file_name}, only: {",".join([x for x in streamer["application_name"].unique()])}')
+
+```
+
+### 2.Вывод информации о следующих данных:
+['src_ip','dst_ip','bidirectional_packets','bidirectional_bytes','application_name','application_cat
+egory_name'] с возможностью вывода для уникальных значений ['src_ip','dst_ip',
+'application_name']
+
+```python
+streamer = NFStreamer('IKEv2.2.pcapng', udps=Packet40Count()).to_pandas()
+data = streamer[['src_ip', 'dst_ip', 'bidirectional_packets', 'bidirectional_bytes',
+            'application_name', 'application_category_name']]
+print("\nВся информация:\n")
+print(data)
+group = streamer[['src_ip', 'dst_ip', 'application_name' ]]
+print("\nГруппировка по приложению:\n")
+print(group.groupby(['application_name', 'src_ip'], sort=True).first())
+```
+### 3.Вывод начала и конца захвата трафика
+```python
+time = streamer['bidirectional_first_seen_ms']
+print("\nНачало захвата:\n")
+print(datetime.fromtimestamp(round(time[0]/1000)))
+time = streamer['bidirectional_last_seen_ms']
+print("\nКонец захвата:\n")
+print(datetime.fromtimestamp(round(time[len(time.index)-1] / 1000)))
+```
+
+### 4.Вывод полезной информации на основании данных, что есть в трафике
+```python
+print("\nПолезная информация\n")
+print(streamer.groupby(['application_name', 'application_category_name'], as_index=False, sort=True)['bidirectional_packets'].sum())
+```
+
+
+### Отчёт:
+```html
+[report.md](https://github.com/Didizy/VPN/files/8501417/report.md)
+
+```
+
 ## Модель машинного обучения
 Для создания модели была использована библиотека Sklearn, меотд RandomForestClassifier
 
