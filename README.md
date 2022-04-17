@@ -44,13 +44,6 @@ print("\nПолезная информация\n")
 print(streamer.groupby(['application_name', 'application_category_name'], as_index=False, sort=True)['bidirectional_packets'].sum())
 ```
 
-
-### Отчёт:
-```html
-![report.md]
-
-```
-
 ## Модель машинного обучения
 Для создания модели была использована библиотека Sklearn, меотд RandomForestClassifier
 
