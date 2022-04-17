@@ -47,7 +47,7 @@ print(streamer.groupby(['application_name', 'application_category_name'], as_ind
 
 ### Отчёт:
 ```html
-![report.md](https://github.com/Didizy/VPN/files/8501417/report.md)
+![report.md]
 
 ```
 
